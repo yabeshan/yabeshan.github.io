@@ -1,0 +1,240 @@
+﻿{"screens":{
+    "1920x1080":{
+        "MAIN_SCREEN":[{
+            "name":"fullScreenBtn", "id":"main_fullScreen_Btn", "btnMode":true, "btnLabel":["normal","full"],
+            "init":{ "x":1897, "y":35, "width":1, "height":1 },
+            "view":{ "x":1880, "y":17, "width":34, "height":34, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"refreshBtn", "id":"main_refresh_Btn", "btnMode":true,
+            "init":{ "x":1857, "y":35, "width":1, "height":1 },
+            "view":{ "x":1840, "y":17, "width":34, "height":34, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"onsiteBtn", "id":"main_onsite_Btn", "btnMode":true,
+            "init":{ "x":1780, "y":35, "width":1, "height":1 },
+            "view":{ "x":1740, "y":17, "width":80, "height":33, "delay":0.3, "duration":0.2 }
+        },{
+			"name":"titleMenuText", "id":"main_title_menu_Text", "btnMode":true,
+            "init":{ "x":1390, "y":23, "width":210, "height":20 }    
+        },{/*
+            "name":"demoBtn", "id":"main_demo_Btn", "btnMode":true,
+            "init":{ "x":1680, "y":35, "width":1, "height":1 },
+            "view":{ "x":1640, "y":17, "width":80, "height":33, "delay":0.3, "duration":0.2 }
+		},{
+            "name":"titleNoneAnonsText", "id":"main_transnone_Text",
+            "init":{ "x":1405, "y":481, "width":1, "height":1 },
+            "view":{ "x":1240, "y":400, "width":329, "height":163, "delay":0.7, "duration":0.2 }
+        },{*/
+			"name":"bannerSoccer", "id":"bannerSoccerSmall", "btnMode":true,
+            "init":{ "x":1390, "y":400, "width":1, "height":1 },
+            "view":{ "x":1175, "y":280, "width":432, "height":246, "delay":0.7, "duration":0.2 }
+        },{
+            "name":"titleNonePlayText", "id":"main_transnone_Text",
+			
+            "init":{ "x":748, "y":481, "width":1, "height":1 },
+            "view":{ "x":580, "y":400, "width":329, "height":163, "delay":0.7, "duration":0.2 }
+        },{
+            "name":"PanelUserMC", "id":"PanelMainUser1920", "mouseEnabled":true,
+            "init":{ "x":110, "y":13 }
+        }],
+        "TENNIS_SCREEN":[{
+            "name":"fullScreenBtn", "id":"game_fullscreen_Btn", "btnMode":true, "btnLabel":["normal","full"],
+            "init":{ "x":1880, "y":41, "width":1, "height":1 },
+            "view":{ "x":1860, "y":24, "width":39, "height":38, "delay":0.1, "duration":0.2 }
+        },{
+            "name":"soundBtn", "id":"game_sound_Btn", "btnMode":true, "btnLabel":["volume","mute"],
+            "init":{ "x":1830, "y":41, "width":1, "height":1 },
+            "view":{ "x":1810, "y":24, "width":39, "height":38, "delay":0.1, "duration":0.2 }
+        },{
+            "name":"backlistBtn", "id":"game_backlist_Btn", "btnMode":true,
+            "init":{ "x":112, "y":41, "width":1, "height":1 },
+            "view":{ "x":30, "y":24, "width":164, "height":38, "delay":0.1, "duration":0.2 }
+        },{
+			
+			"name":"homeAvatarPanel", "id":"game_kort_avatar",
+			"init":{ "x":850, "y":480, "width":1, "height":1 },
+			"view":{ "x":850, "y":480, "width":310, "height":95, "delay":0.7, "duration":0.2 }
+		},{
+			"name":"awayAvatarPanel", "id":"game_kort_avatar", 
+			"init":{ "x":1190, "y":950, "width":1, "height":1 },
+			"view":{ "x":1190, "y":950, "width":310, "height":95, "delay":1.0, "duration":0.2 }
+		},{
+			"name":"lineMatchPanelHeaderBtn", "id":"MatchPanelHeaderBtn", "btnMode":true,
+            "init":{ "x":1288, "y":15, "width":190, "height":56 }
+        },{
+			"name":"statistMatchPanelHeaderBtn", "id":"MatchPanelHeaderBtn", "btnMode":true,
+            "init":{ "x":1478, "y":15, "width":160, "height":56 }
+        },{
+			"name":"archiveMatchPanelHeaderBtn", "id":"MatchPanelHeaderBtn", "btnMode":true,
+            "init":{ "x":1635, "y":15, "width":110, "height":56 }
+        },{
+			"name":"matchPanelHeader", "id":"MatchPanelHeader",
+            "init":{ "x":1281, "y":25, "width":623, "height":158 }
+        },{
+			"name":"betMatchWins", "id":"betMatchWins", "btnMode":true,
+            "init":{ "x":1289, "y":130, "width":112, "height":43 }
+        },{
+			"name":"betMatchFora", "id":"betMatchFora", "btnMode":true,
+            "init":{ "x":1401, "y":130, "width":100, "height":43 }
+        },{
+			"name":"betMatchTotals", "id":"betMatchTotals", "btnMode":true,
+            "init":{ "x":1501, "y":130, "width":111, "height":43 }
+        },{
+            "name":"bet1Btn", "id":"game_board_bet10_Btn", "btnMode":true,
+            "init":{ "x":755, "y":129, "width":1, "height":1 },
+            "view":{ "x":656, "y":107, "width":198, "height":45, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"bet2Btn", "id":"game_board_bet50_Btn", "btnMode":true,
+            "init":{ "x":959, "y":129, "width":1, "height":1 },
+            "view":{ "x":861, "y":107, "width":198, "height":45, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"bet3Btn", "id":"game_board_bet100_Btn", "btnMode":true,
+            "init":{ "x":1165, "y":129, "width":1, "height":1 },
+            "view":{ "x":1066, "y":107, "width":198, "height":45, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"bet4Btn", "id":"game_board_bet500_Btn", "btnMode":true,
+            "init":{ "x":755, "y":180, "width":1, "height":1 },
+            "view":{ "x":656, "y":158, "width":198, "height":45, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"bet5Btn", "id":"game_board_bet1000_Btn", "btnMode":true,
+            "init":{ "x":959, "y":180, "width":1, "height":1 },
+            "view":{ "x":861, "y":158, "width":198, "height":45, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"bet6Btn", "id":"game_board_bet5000_Btn", "btnMode":true,
+            "init":{ "x":1165, "y":180, "width":1, "height":1 },
+            "view":{ "x":1066, "y":158, "width":198, "height":45, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"gameTabBetLeft", "id":"game_tab_bet", "btnMode":true,
+            "init":{ "x":801, "y":416, "width":1, "height":1 },
+            "view":{ "x":646, "y":416, "width":313, "height":50, "delay":0.8, "duration":0.2 }
+        },{
+            "name":"gameTabBetRight", "id":"game_tab_bet", "btnMode":true,
+            "init":{ "x":1116, "y":416, "width":1, "height":1 },
+            "view":{ "x":961, "y":416, "width":313, "height":50, "delay":1.0, "duration":0.2 }
+        },{
+            "name":"boardText", "id":"TextGameBoard1920",
+            "init":{ "x":0, "y":0 }
+		},{
+            "name":"PanelUserMC", "id":"PanelGameUser1920", "mouseEnabled":true,
+            "init":{ "x":680, "y":15 }
+        }]
+    },
+    "1366x768":{
+        "MAIN_SCREEN":[{
+            "name":"fullScreenBtn", "id":"main_fullScreen_Btn", "btnMode":true, "btnLabel":["normal","full"],
+            "init":{ "x":1343, "y":35, "width":1, "height":1 },
+            "view":{ "x":1326, "y":17, "width":34, "height":34, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"refreshBtn", "id":"main_refresh_Btn", "btnMode":true,
+            "init":{ "x":1303, "y":35, "width":1, "height":1 },
+            "view":{ "x":1286, "y":17, "width":34, "height":34, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"onsiteBtn", "id":"main_onsite_Btn", "btnMode":true,
+            "init":{ "x":1230, "y":35, "width":1, "height":1 },
+            "view":{ "x":1190, "y":17, "width":80, "height":33, "delay":0.3, "duration":0.2 }
+        },{
+			"name":"titleMenuText", "id":"main_title_menu_Text", "btnMode":true,
+            "init":{ "x":870, "y":23, "width":210, "height":20 }
+        },{/*
+            "name":"demoBtn", "id":"main_demo_Btn", "btnMode":true,
+            "init":{ "x":1140, "y":35, "width":1, "height":1 },
+            "view":{ "x":1100, "y":17, "width":80, "height":33, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"titleNoneAnonsText", "id":"main_transnone_Text",
+            "init":{ "x":1135, "y":360, "width":1, "height":1 },
+            "view":{ "x":970, "y":280, "width":329, "height":163, "delay":0.7, "duration":0.2 }
+        },{*/
+			"name":"bannerSoccer", "id":"bannerSoccerSmall", "btnMode":true,
+            "init":{ "x":1110, "y":400, "width":1, "height":1 },
+            "view":{ "x":895, "y":280, "width":432, "height":246, "delay":0.7, "duration":0.2 }
+        },{
+            "name":"titleNonePlayText", "id":"main_transnone_Text",
+            "init":{ "x":475, "y":360, "width":1, "height":1 },
+            "view":{ "x":310, "y":280, "width":329, "height":163, "delay":0.7, "duration":0.2 }
+        },{
+            "name":"PanelUserMC", "id":"PanelMainUser1366", "mouseEnabled":true,
+            "init":{ "x":110, "y":13 }
+        }
+			
+		],
+        "TENNIS_SCREEN":[{
+            "name":"fullScreenBtn", "id":"game_fullscreen_Btn", "btnMode":true, "btnLabel":["normal","full"],
+            "init":{ "x":1315, "y":30, "width":1, "height":1 },
+            "view":{ "x":1321, "y":17, "width":28, "height":27, "delay":0.1, "duration":0.2 }
+        },{
+            "name":"soundBtn", "id":"game_sound_Btn", "btnMode":true, "btnLabel":["volume","mute"],
+            "init":{ "x":1300, "y":30, "width":1, "height":1 },
+            "view":{ "x":1286, "y":17, "width":28, "height":27, "delay":0.1, "duration":0.2 }
+        },{
+            "name":"backlistBtn", "id":"game_backlist_Btn", "btnMode":true,
+            "init":{ "x":75, "y":30, "width":1, "height":1 },
+            "view":{ "x":15, "y":15, "width":130, "height":30, "delay":0.1, "duration":0.2 }
+        },{
+			"name":"homeAvatarPanel", "id":"game_kort_avatar",
+			"init":{ "x":600, "y":350, "width":1, "height":1 },
+			"view":{ "x":600, "y":350, "width":217, "height":66, "delay":0.7, "duration":0.2 }
+		},{
+			"name":"awayAvatarPanel", "id":"game_kort_avatar", 
+			"init":{ "x":845, "y":675, "width":1, "height":1 },
+			"view":{ "x":845, "y":675, "width":217, "height":66, "delay":1.0, "duration":0.2 }
+		},{
+			"name":"lineMatchPanelHeaderBtn", "id":"MatchPanelHeaderBtn", "btnMode":true,
+            "init":{ "x":915, "y":10, "width":140, "height":41 }
+        },{
+			"name":"statistMatchPanelHeaderBtn", "id":"MatchPanelHeaderBtn", "btnMode":true,
+            "init":{ "x":1055, "y":10, "width":105, "height":41 }
+        },{
+			"name":"archiveMatchPanelHeaderBtn", "id":"MatchPanelHeaderBtn", "btnMode":true,
+            "init":{ "x":1158, "y":10, "width":95, "height":41 }
+        },{
+			"name":"matchPanelHeader", "id":"MatchPanelHeader",
+            "init":{ "x":915, "y":18, "width":436, "height":112 }
+        },{
+			"name":"betMatchWins", "id":"betMatchWins", "btnMode":true,
+            "init":{ "x":918, "y":92, "width":82, "height":31 }
+        },{
+			"name":"betMatchFora", "id":"betMatchFora", "btnMode":true,
+            "init":{ "x":998, "y":92, "width":70, "height":31 }
+        },{
+			"name":"betMatchTotals", "id":"betMatchTotals", "btnMode":true,
+            "init":{ "x":1068, "y":92, "width":78, "height":31 }
+        },{
+            "name":"bet1Btn", "id":"game_board_bet10_Btn", "btnMode":true,
+            "init":{ "x":548, "y":92, "width":1, "height":1 },
+            "view":{ "x":468, "y":76, "width":141, "height":32, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"bet2Btn", "id":"game_board_bet50_Btn", "btnMode":true,
+            "init":{ "x":684, "y":92, "width":1, "height":1 },
+            "view":{ "x":614, "y":76, "width":141, "height":32, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"bet3Btn", "id":"game_board_bet100_Btn", "btnMode":true,
+            "init":{ "x":829, "y":92, "width":1, "height":1 },
+            "view":{ "x":759, "y":76, "width":141, "height":32, "delay":0.3, "duration":0.2 }
+        },{
+            "name":"bet4Btn", "id":"game_board_bet500_Btn", "btnMode":true,
+            "init":{ "x":548, "y":128, "width":1, "height":1 },
+            "view":{ "x":468, "y":112, "width":141, "height":32, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"bet5Btn", "id":"game_board_bet1000_Btn", "btnMode":true,
+            "init":{ "x":684, "y":128, "width":1, "height":1 },
+            "view":{ "x":614, "y":112, "width":141, "height":32, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"bet6Btn", "id":"game_board_bet5000_Btn", "btnMode":true,
+            "init":{ "x":829, "y":128, "width":1, "height":1 },
+            "view":{ "x":759, "y":112, "width":141, "height":32, "delay":0.5, "duration":0.2 }
+        },{
+            "name":"gameTabBetLeft", "id":"game_tab_bet", "btnMode":true,
+            "init":{ "x":572, "y":313, "width":1, "height":1 },
+            "view":{ "x":461, "y":295, "width":223, "height":36, "delay":0.8, "duration":0.2 }
+        },{
+            "name":"gameTabBetRight", "id":"game_tab_bet", "btnMode":true,
+            "init":{ "x":794, "y":313, "width":1, "height":1 },
+            "view":{ "x":683, "y":295, "width":223, "height":36, "delay":1.0, "duration":0.2 }
+        },{
+            "name":"boardText", "id":"TextGameBoard1366",
+            "init":{ "x":0, "y":0 }
+		},{
+            "name":"PanelUserMC", "id":"PanelGameUser1366", "mouseEnabled":true,
+            "init":{ "x":472, "y":9 }
+        }]
+    }
+}}
