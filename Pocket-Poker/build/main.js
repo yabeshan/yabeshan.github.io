@@ -295,8 +295,8 @@ var ApiProvider = ApiProvider_1 = (function () {
         this.init();
     }
     ApiProvider.prototype.init = function () {
-        this.boardRequest('/assets/mock-data/board.json', {});
-        this.userRequest('/assets/mock-data/user.json', {});
+        this.boardRequest('http://yabeshan.github.io/Pocket-Poker/assets/mock-data/board.json', {});
+        this.userRequest('http://yabeshan.github.io/Pocket-Poker/assets/mock-data/user.json', {});
     };
     ApiProvider.prototype.boardRequest = function (url, data) {
         var _this = this;
