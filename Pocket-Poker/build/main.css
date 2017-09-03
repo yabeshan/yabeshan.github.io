@@ -25200,7 +25200,7 @@ ion-navbar.toolbar {
 }
 
 cp-board .board-container {
-  background-image: url("/assets/avatars/bg.jpg");
+  background-image: url("assets/avatars/bg.jpg");
   height: 100%;
 }
 
