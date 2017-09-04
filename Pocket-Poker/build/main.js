@@ -512,7 +512,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var CpBoard = (function () {
     function CpBoard(platform) {
         this.platform = platform;
-        this.rotate = 0;
+        this.rotate = -60;
         this.top = 0;
         this.left = 0;
         this.zoom = 1;
@@ -546,16 +546,16 @@ var CpBoard = (function () {
     };
     CpBoard.prototype.boardPosition = function (w, h, isLandscape) {
         if (isLandscape) {
-            this.rotate = 0;
-            this.rotatePlayer = "0";
+            // this.rotate = 0;
+            // this.rotatePlayer = "0";
             this.top = 0;
             this.left = 0;
             this.zoomX = w / 800;
             this.zoomY = h / ((h < 500) ? 640 : 600);
         }
         else {
-            this.rotate = -90;
-            this.rotatePlayer = "90";
+            // this.rotate = -90;
+            // this.rotatePlayer = "90";
             this.top = 0;
             this.left = -100;
             this.zoomX = h / 800;
@@ -607,7 +607,7 @@ var CpBoard = (function () {
 }());
 CpBoard = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'cp-board',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/'<!-- <div class="board-container" \n\n    [style.zoom]="zoom" \n\n    [style.transform]="\'rotate(\' + rotate + \'deg)\'" \n\n    [style.top.px]="top"\n\n    [style.left.px]="left"> -->\n\n    \n\n<div class="board-container" \n\n    [style.zoom]="zoom" \n\n    [style.top.px]="top"\n\n    [style.left.px]="left">\n\n\n\n    <div class="cards-holder">\n\n            <!-- cards-holder -->\n\n    </div>\n\n    <div class="room-holder">\n\n        <cp-room></cp-room>\n\n    </div>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/
+        selector: 'cp-board',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/'<div class="board-container" \n\n    [style.zoom]="zoom" \n\n    [style.transform]="\'rotate(\' + rotate + \'deg)\'" \n\n    [style.top.px]="top"\n\n    [style.left.px]="left">\n\n\n\n    <div class="cards-holder">\n\n            <!-- cards-holder -->\n\n    </div>\n\n    <div class="room-holder">\n\n        <cp-room></cp-room>\n\n    </div>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
 ], CpBoard);
