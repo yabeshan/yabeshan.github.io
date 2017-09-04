@@ -428,7 +428,7 @@ var ResizeProvider = (function () {
         window.addEventListener("resize", function () {
             setTimeout(function () {
                 ResizeProvider.resizeAction.next(null);
-            }, 300);
+            }, 100);
         }, false);
     };
     return ResizeProvider;
@@ -505,7 +505,12 @@ var CpBoard = (function () {
     CpBoard.prototype.resizeActionHandler = function (model) {
         var w = window.innerWidth;
         var h = window.innerHeight;
-        this.desktopPosition(w, h);
+        var isLandscape = (this.platform && this.platform.isLandscape() == true);
+        if (window.orientation == undefined) {
+            // desktop detect
+            isLandscape = (h / w < 1.3);
+        }
+        this.boardPosition(w, h, isLandscape);
         // if (window.orientation == undefined) {
         //     this.desktopPosition(w, h);
         // } else {
@@ -513,14 +518,14 @@ var CpBoard = (function () {
         //     this.mobilePosition(w, h, isLandscape);
         // }
     };
-    CpBoard.prototype.desktopPosition = function (w, h) {
-        if (h / w < 1.3) {
+    CpBoard.prototype.boardPosition = function (w, h, isLandscape) {
+        if (isLandscape) {
             this.rotate = 0;
             this.rotatePlayer = "0";
             this.top = 0;
             this.left = 0;
             this.zoomX = w / 800;
-            this.zoomY = h / 600;
+            this.zoomY = h / ((h < 500) ? 640 : 600);
         }
         else {
             this.rotate = -90;
