@@ -440,9 +440,11 @@ var ResizeProvider = ResizeProvider_1 = (function () {
         ResizeProvider_1.resizeAction.next(null);
         var that = this;
         window.addEventListener("resize", function () {
-            var isLandscape = (that.platform && that.platform.isLandscape() == true);
+            var isLandscape1 = (that.platform && that.platform.isLandscape() == true);
             setTimeout(function () {
-                ResizeProvider_1.resizeAction.next(isLandscape);
+                var isLandscape2 = (that.platform && that.platform.isLandscape() == true);
+                ResizeProvider_1.resizeAction.next(isLandscape2);
+                alert(isLandscape1 + "______________" + isLandscape2);
             }, 1500);
         }, false);
     };
