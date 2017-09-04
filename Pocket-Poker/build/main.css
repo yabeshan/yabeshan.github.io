@@ -25204,6 +25204,8 @@ cp-board .board-container {
   width: 800px;
   height: 600px;
   position: absolute;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
 }
 
 cp-board .cards-holder {
