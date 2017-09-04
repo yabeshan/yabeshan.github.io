@@ -529,7 +529,6 @@ var CpBoard = (function () {
     CpBoard.prototype.resizeActionHandler = function (isLandscape) {
         var w = window.innerWidth;
         var h = window.innerHeight;
-        // let isLandscape: boolean = (this.platform && this.platform.isLandscape() == true);
         if (window.orientation == undefined) {
             // desktop detect
             isLandscape = (h / w < 1.3);
@@ -538,15 +537,8 @@ var CpBoard = (function () {
             // mobile tablet
             var o = window.orientation + "";
             isLandscape = (o.indexOf("90") >= 0);
-            alert(window.orientation + "____" + isLandscape + "=======" + o.indexOf("90"));
         }
         this.boardPosition(w, h, isLandscape);
-        // if (window.orientation == undefined) {
-        //     this.desktopPosition(w, h);
-        // } else {
-        //     let isLandscape: boolean = (this.platform && this.platform.isLandscape() == true);
-        //     this.mobilePosition(w, h, isLandscape);
-        // }
     };
     CpBoard.prototype.boardPosition = function (w, h, isLandscape) {
         if (isLandscape) {
