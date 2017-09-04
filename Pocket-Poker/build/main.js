@@ -441,10 +441,12 @@ var ResizeProvider = ResizeProvider_1 = (function () {
         var that = this;
         window.addEventListener("resize", function () {
             var isLandscape1 = (that.platform && that.platform.isLandscape() == true);
+            var orient1 = window.orientation;
             setTimeout(function () {
                 var isLandscape2 = (that.platform && that.platform.isLandscape() == true);
+                var orient2 = window.orientation;
                 ResizeProvider_1.resizeAction.next(isLandscape2);
-                alert(isLandscape1 + "______________" + isLandscape2);
+                alert(isLandscape1 + " = " + orient1 + "_____________" + isLandscape2 + " = " + orient2);
             }, 1500);
         }, false);
     };
@@ -528,6 +530,8 @@ var CpBoard = (function () {
         var w = window.innerWidth;
         var h = window.innerHeight;
         // let isLandscape: boolean = (this.platform && this.platform.isLandscape() == true);
+        // if (isLandscape && ) {
+        // }
         if (window.orientation == undefined) {
             // desktop detect
             isLandscape = (h / w < 1.3);
