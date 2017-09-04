@@ -440,14 +440,14 @@ var ResizeProvider = ResizeProvider_1 = (function () {
         ResizeProvider_1.resizeAction.next(null);
         var that = this;
         window.addEventListener("resize", function () {
-            var isLandscape1 = (that.platform && that.platform.isLandscape() == true);
-            var orient1 = window.orientation;
+            // let isLandscape1: boolean = (that.platform && that.platform.isLandscape() == true);
+            // let orient1 = window.orientation;
             setTimeout(function () {
-                var isLandscape2 = (that.platform && that.platform.isLandscape() == true);
-                var orient2 = window.orientation;
-                ResizeProvider_1.resizeAction.next(isLandscape2);
-                alert(isLandscape1 + " = " + orient1 + "_____________" + isLandscape2 + " = " + orient2);
-            }, 1500);
+                // let isLandscape2: boolean = (that.platform && that.platform.isLandscape() == true);
+                // let orient2 = window.orientation;
+                // alert( isLandscape1 + " = "+orient1 + "_____________" + isLandscape2 + " = "+orient2 );
+                ResizeProvider_1.resizeAction.next(null);
+            }, 300);
         }, false);
     };
     return ResizeProvider;
@@ -530,11 +530,14 @@ var CpBoard = (function () {
         var w = window.innerWidth;
         var h = window.innerHeight;
         // let isLandscape: boolean = (this.platform && this.platform.isLandscape() == true);
-        // if (isLandscape && ) {
-        // }
         if (window.orientation == undefined) {
             // desktop detect
             isLandscape = (h / w < 1.3);
+        }
+        else {
+            // mobile tablet
+            var o = window.orientation + "";
+            isLandscape = (o.indexOf("90") >= 0);
         }
         this.boardPosition(w, h, isLandscape);
         // if (window.orientation == undefined) {
