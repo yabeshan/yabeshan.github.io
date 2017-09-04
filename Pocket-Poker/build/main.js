@@ -1,5 +1,25 @@
 webpackJsonp([0],{
 
+/***/ 100:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__board_model__ = __webpack_require__(267);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__board_model__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_model__ = __webpack_require__(268);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__request_model__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__position_model__ = __webpack_require__(269);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__position_model__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__player_model__ = __webpack_require__(270);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__player_model__["a"]; });
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ 110:
 /***/ (function(module, exports) {
 
@@ -66,14 +86,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -141,11 +161,11 @@ AppModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -203,7 +223,7 @@ MyApp = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -252,7 +272,7 @@ HomePage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -354,17 +374,15 @@ var RequestModel = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PositionModel; });
 var PositionModel = (function () {
-    function PositionModel(x, y, zoom, orientation, isLandscape) {
+    function PositionModel(x, y, zoom, orientation) {
         if (x === void 0) { x = 0; }
         if (y === void 0) { y = 0; }
         if (zoom === void 0) { zoom = 1; }
         if (orientation === void 0) { orientation = "0"; }
-        if (isLandscape === void 0) { isLandscape = true; }
         this.x = x;
         this.y = y;
         this.zoom = zoom;
         this.orientation = orientation;
-        this.isLandscape = isLandscape;
     }
     return PositionModel;
 }());
@@ -397,57 +415,29 @@ var PlayerModel = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResizeProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(50);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
 
-
-
-
-var ResizeProvider = ResizeProvider_1 = (function () {
-    function ResizeProvider(platform) {
-        this.platform = platform;
+// @Injectable()
+var ResizeProvider = (function () {
+    function ResizeProvider() {
         this.init();
     }
     ResizeProvider.prototype.init = function () {
-        ResizeProvider_1.resizeAction.next(this.getModel());
-        var that = this;
+        ResizeProvider.resizeAction.next(null);
         window.addEventListener("resize", function () {
             setTimeout(function () {
-                ResizeProvider_1.resizeAction.next(that.getModel());
+                ResizeProvider.resizeAction.next(null);
             }, 300);
         }, false);
     };
-    ResizeProvider.prototype.getModel = function () {
-        var w = window.innerWidth;
-        var h = window.innerHeight;
-        var z = 1;
-        var o = window.orientation + "";
-        var l = (this.platform) ? this.platform.isLandscape() : null;
-        alert(l + "____" + o + "====" + window.devicePixelRatio + "___" + window.innerWidth + "++++" + window.outerWidth);
-        var model = new __WEBPACK_IMPORTED_MODULE_3__models__["c" /* PositionModel */](w, h, z, o, l);
-        return model;
-    };
     return ResizeProvider;
 }());
-ResizeProvider.resizeAction = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"](new __WEBPACK_IMPORTED_MODULE_3__models__["c" /* PositionModel */]());
-ResizeProvider = ResizeProvider_1 = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
-], ResizeProvider);
 
-var ResizeProvider_1;
+// resizeAction = detect to resize, orientation, fullscreen
+ResizeProvider.resizeAction = new __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__["BehaviorSubject"](null);
+// rotationAction = fire from board after rotation 
+ResizeProvider.rotationAction = new __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__["BehaviorSubject"](null);
 //# sourceMappingURL=resize-provider.js.map
 
 /***/ }),
@@ -481,7 +471,8 @@ var ResizeProvider_1;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CpBoard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -493,8 +484,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var CpBoard = (function () {
-    function CpBoard() {
+    function CpBoard(platform) {
+        this.platform = platform;
         this.rotate = 0;
         this.top = 0;
         this.left = 0;
@@ -505,37 +498,79 @@ var CpBoard = (function () {
     }
     CpBoard.prototype.ngOnInit = function () {
         var _this = this;
-        __WEBPACK_IMPORTED_MODULE_1__providers__["c" /* ResizeProvider */].resizeAction.subscribe(function (model) {
+        __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ResizeProvider */].resizeAction.subscribe(function (model) {
             _this.resizeActionHandler(model);
         });
     };
     CpBoard.prototype.resizeActionHandler = function (model) {
-        console.log(model);
-        // 800x600
-        var w = model.x;
-        var h = model.y;
-        if (model.isLandscape == true) {
-            if (w > 0 && h > 0) {
-                this.zoomX = w / 810;
-                this.zoomY = h / 640;
-                this.zoom = (this.zoomX < this.zoomY) ? this.zoomX : this.zoomY;
-                // console.log ("resizeActionHandler", this.zoom, model.x);
-            }
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        this.desktopPosition(w, h);
+        // if (window.orientation == undefined) {
+        //     this.desktopPosition(w, h);
+        // } else {
+        //     let isLandscape: boolean = (this.platform && this.platform.isLandscape() == true);
+        //     this.mobilePosition(w, h, isLandscape);
+        // }
+    };
+    CpBoard.prototype.desktopPosition = function (w, h) {
+        if (h / w < 1.3) {
             this.rotate = 0;
+            this.rotatePlayer = "0";
             this.top = 0;
-            this.left = 400 * this.zoom;
+            this.left = 0;
+            this.zoomX = w / 800;
+            this.zoomY = h / 600;
         }
         else {
-            if (w > 0 && h > 0) {
-                this.zoomX = h / 800;
-                this.zoomY = w / 600;
-                this.zoom = (this.zoomX < this.zoomY) ? this.zoomX : this.zoomY;
-                // console.log ("resizeActionHandler", this.zoom, model.x);
-            }
             this.rotate = -90;
-            this.top = 400 * this.zoom;
-            this.left = -100; //600 * this.zoom;
+            this.rotatePlayer = "90";
+            this.top = 0;
+            this.left = -100;
+            this.zoomX = h / 800;
+            this.zoomY = w / 600;
         }
+        __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ResizeProvider */].rotationAction.next(this.rotatePlayer);
+        this.zoom = (this.zoomX < this.zoomY) ? this.zoomX : this.zoomY;
+        var dist = (w - 800 * this.zoom);
+        if (dist > 20) {
+            this.left = dist * 0.5 / this.zoom;
+        }
+        else {
+            this.top = (h - 600 * this.zoom) * 0.5 / this.zoom;
+        }
+    };
+    CpBoard.prototype.mobilePosition = function (w, h, isLandscape) {
+        var o = window.orientation + "";
+        /*
+                console.log (model);
+                // 800x600
+                let w: number = model.x;
+                let h: number = model.y;
+        
+                if (model.isLandscape == true) {
+                    if (w > 0 && h > 0) {
+                        this.zoomX = w / 810;
+                        this.zoomY = h / 640;
+                        this.zoom = (this.zoomX < this.zoomY) ? this.zoomX : this.zoomY;
+                        // console.log ("resizeActionHandler", this.zoom, model.x);
+                    }
+                    this.rotate = 0;
+                    this.top = 0;
+                    this.left = 400 * this.zoom;
+                } else {
+        
+                    if (w > 0 && h > 0) {
+                        this.zoomX = h / 800;
+                        this.zoomY = w / 600;
+                        this.zoom = (this.zoomX < this.zoomY) ? this.zoomX : this.zoomY;
+                        // console.log ("resizeActionHandler", this.zoom, model.x);
+                    }
+                    this.rotate = -90;
+                    this.top = 400 * this.zoom;
+                    this.left = -100;//600 * this.zoom;
+                }
+                */
     };
     return CpBoard;
 }());
@@ -543,7 +578,7 @@ CpBoard = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'cp-board',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/'<div class="board-container" \n\n    [style.zoom]="zoom" \n\n    [style.transform]="\'rotate(\' + rotate + \'deg)\'" \n\n    [style.top.px]="top"\n\n    [style.left.px]="left">\n\n    \n\n    <div class="cards-holder">\n\n            <!-- cards-holder -->\n\n    </div>\n\n    <div class="room-holder">\n\n        <cp-room></cp-room>\n\n    </div>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
 ], CpBoard);
 
 //# sourceMappingURL=cp-board.js.map
@@ -558,8 +593,8 @@ CpBoard = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -640,7 +675,8 @@ CpRoom = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -653,6 +689,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CpPlayer = (function () {
     function CpPlayer() {
         this.position = new __WEBPACK_IMPORTED_MODULE_2__models__["c" /* PositionModel */](100);
@@ -661,13 +698,17 @@ var CpPlayer = (function () {
         this.name = "";
         this.balance = "";
         this.image = "";
-        this.top = "0px";
-        this.left = "0px";
+        this.rotate = "0";
+        this.top = 0;
+        this.left = 0;
         //
     }
     CpPlayer.prototype.ngOnInit = function () {
         var _this = this;
         this.playerAction.subscribe(function (data) { return _this.initPlayer(data); });
+        __WEBPACK_IMPORTED_MODULE_3__providers__["c" /* ResizeProvider */].rotationAction.subscribe(function (angle) {
+            _this.rotationActionHandler(angle);
+        });
     };
     CpPlayer.prototype.initPlayer = function (model) {
         if (model == null || model.player == null) {
@@ -685,10 +726,13 @@ var CpPlayer = (function () {
             this.image = this.model.image;
             this.position = model.position;
             if (this.position != null) {
-                this.top = this.position.y + "px";
-                this.left = this.position.x + "px";
+                this.top = this.position.y;
+                this.left = this.position.x;
             }
         }
+    };
+    CpPlayer.prototype.rotationActionHandler = function (angle) {
+        this.rotate = angle;
     };
     return CpPlayer;
 }());
@@ -698,7 +742,7 @@ __decorate([
 ], CpPlayer.prototype, "playerAction", void 0);
 CpPlayer = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'cp-player',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/'<div class="player-container" *ngIf="visible" [style.top]="top" [style.left]="left">\n\n    <div class="avatar">\n\n        <img src="{{image}}" style="width:90px">\n\n    </div>\n\n    <div class="label">\n\n        {{name}}<br>{{balance}}\n\n    </div>\n\n    \n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/
+        selector: 'cp-player',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/'<div class="player-container" \n\n    *ngIf="visible" \n\n    [style.top.px]="top" \n\n    [style.left.px]="left"\n\n    [style.transform]="\'rotate(\' + rotate + \'deg)\'" >\n\n\n\n    <div class="avatar">\n\n        <img src="{{image}}" style="width:90px">\n\n    </div>\n\n    <div class="label">\n\n        {{name}}<br>{{balance}}\n\n    </div>\n\n    \n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], CpPlayer);
@@ -777,7 +821,7 @@ CpBottomMenu = __decorate([
 
 /***/ }),
 
-/***/ 38:
+/***/ 31:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -786,26 +830,6 @@ CpBottomMenu = __decorate([
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__api_provider__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__resize_provider__ = __webpack_require__(271);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__resize_provider__["a"]; });
-
-
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 50:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__board_model__ = __webpack_require__(267);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__board_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_model__ = __webpack_require__(268);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__request_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__position_model__ = __webpack_require__(269);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__position_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__player_model__ = __webpack_require__(270);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__player_model__["a"]; });
-
-
 
 
 //# sourceMappingURL=index.js.map
