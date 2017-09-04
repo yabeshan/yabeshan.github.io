@@ -430,12 +430,12 @@ var ResizeProvider = ResizeProvider_1 = (function () {
         }, false);
     };
     ResizeProvider.prototype.getModel = function () {
-        alert("" + this.platform._platforms);
         var w = window.innerWidth;
         var h = window.innerHeight;
         var z = 1;
         var o = window.orientation + "";
-        var l = this.platform.isLandscape();
+        var l = (this.platform) ? this.platform.isLandscape() : null;
+        alert(l + "____" + o + "====" + window.devicePixelRatio + "___" + window.innerWidth + "++++" + window.outerWidth);
         var model = new __WEBPACK_IMPORTED_MODULE_3__models__["c" /* PositionModel */](w, h, z, o, l);
         return model;
     };
