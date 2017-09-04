@@ -440,19 +440,17 @@ var ResizeProvider = ResizeProvider_1 = (function () {
         ResizeProvider_1.resizeAction.next(null);
         var that = this;
         window.addEventListener("resize", function () {
-            var isLandscape1 = (that.platform && that.platform.isLandscape() == true);
+            var isLandscape = (that.platform && that.platform.isLandscape() == true);
             setTimeout(function () {
-                var isLandscape2 = (that.platform && that.platform.isLandscape() == true);
-                ResizeProvider_1.resizeAction.next(null);
-                alert(isLandscape1 + "______________" + isLandscape2);
+                ResizeProvider_1.resizeAction.next(isLandscape);
             }, 1500);
         }, false);
     };
     return ResizeProvider;
 }());
-// resizeAction = detect to resize, orientation, fullscreen
+// resizeAction = detect to resize, orientation, fullscreen // boolean = isLandscape 
 ResizeProvider.resizeAction = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"](null);
-// rotationAction = fire from board after rotation 
+// rotationAction = fire from board after rotation // string = angle
 ResizeProvider.rotationAction = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"](null);
 ResizeProvider = ResizeProvider_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
@@ -520,14 +518,14 @@ var CpBoard = (function () {
     }
     CpBoard.prototype.ngOnInit = function () {
         var _this = this;
-        __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ResizeProvider */].resizeAction.subscribe(function (model) {
-            _this.resizeActionHandler(model);
+        __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ResizeProvider */].resizeAction.subscribe(function (isLandscape) {
+            _this.resizeActionHandler(isLandscape);
         });
     };
-    CpBoard.prototype.resizeActionHandler = function (model) {
+    CpBoard.prototype.resizeActionHandler = function (isLandscape) {
         var w = window.innerWidth;
         var h = window.innerHeight;
-        var isLandscape = (this.platform && this.platform.isLandscape() == true);
+        // let isLandscape: boolean = (this.platform && this.platform.isLandscape() == true);
         if (window.orientation == undefined) {
             // desktop detect
             isLandscape = (h / w < 1.3);
