@@ -428,7 +428,7 @@ var ResizeProvider = (function () {
         window.addEventListener("resize", function () {
             setTimeout(function () {
                 ResizeProvider.resizeAction.next(null);
-            }, 100);
+            }, 1500);
         }, false);
     };
     return ResizeProvider;
