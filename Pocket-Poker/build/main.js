@@ -538,6 +538,7 @@ var CpBoard = (function () {
             // mobile tablet
             var o = window.orientation + "";
             isLandscape = (o.indexOf("90") >= 0);
+            alert(window.orientation + "____" + isLandscape + "=======" + o.indexOf("90"));
         }
         this.boardPosition(w, h, isLandscape);
         // if (window.orientation == undefined) {
