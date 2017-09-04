@@ -25201,7 +25201,9 @@ ion-navbar.toolbar {
 
 cp-board .board-container {
   background-image: url("http://yabeshan.github.io/Pocket-Poker/assets/avatars/bg.jpg");
-  height: 100%;
+  width: 800px;
+  height: 600px;
+  position: absolute;
 }
 
 cp-board .cards-holder {
