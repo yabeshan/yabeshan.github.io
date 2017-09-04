@@ -447,7 +447,7 @@ var ResizeProvider = ResizeProvider_1 = (function () {
                 // let orient2 = window.orientation;
                 // alert( isLandscape1 + " = "+orient1 + "_____________" + isLandscape2 + " = "+orient2 );
                 ResizeProvider_1.resizeAction.next(null);
-            }, 300);
+            }, 100);
         }, false);
     };
     return ResizeProvider;
@@ -526,6 +526,9 @@ var CpBoard = (function () {
             _this.resizeActionHandler(isLandscape);
         });
         this.resizeActionHandler(null);
+        setTimeout(function () {
+            _this.resizeActionHandler(null);
+        }, 3000);
     };
     CpBoard.prototype.resizeActionHandler = function (isLandscape) {
         var w = window.innerWidth;
@@ -537,7 +540,7 @@ var CpBoard = (function () {
         else {
             // mobile tablet
             var o = window.orientation + "";
-            isLandscape = (o.indexOf("90") < 0); // (o.indexOf("90")>=0);
+            isLandscape = (o.indexOf("90") >= 0);
         }
         this.boardPosition(w, h, isLandscape);
     };
