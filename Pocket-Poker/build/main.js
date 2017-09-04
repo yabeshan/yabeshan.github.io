@@ -525,6 +525,7 @@ var CpBoard = (function () {
         __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ResizeProvider */].resizeAction.subscribe(function (isLandscape) {
             _this.resizeActionHandler(isLandscape);
         });
+        this.resizeActionHandler(null);
     };
     CpBoard.prototype.resizeActionHandler = function (isLandscape) {
         var w = window.innerWidth;
