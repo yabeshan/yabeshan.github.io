@@ -25204,12 +25204,22 @@ cp-board .board-container {
   width: 800px;
   height: 600px;
   position: absolute;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+cp-board .board-container-rotate {
+  background-image: url("http://yabeshan.github.io/Pocket-Poker/assets/avatars/bg.jpg");
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 cp-board .cards-holder {
   width: 800px;
   height: 600px;
-  background-color: rgba(0, 250, 0, 0.1);
   position: relative;
   top: 0px;
   left: 0px;
@@ -25266,7 +25276,7 @@ cp-player .label {
 }
 
 page-home .game-container {
-  background-color: #644F2C;
+  background-color: #3B2C13;
   width: 100%;
   height: 100%;
   color: #FFFFFF;
