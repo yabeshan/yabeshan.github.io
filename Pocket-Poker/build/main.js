@@ -570,6 +570,9 @@ var CpBoard = (function () {
         else {
             this.top = (h - 600 * this.zoom) * 0.5 / this.zoom;
         }
+        if (!isLandscape) {
+            alert(w + "____" + (800 * this.zoom) + "-----" + h + "____" + (600 * this.zoom));
+        }
     };
     CpBoard.prototype.mobilePosition = function (w, h, isLandscape) {
         var o = window.orientation + "";
