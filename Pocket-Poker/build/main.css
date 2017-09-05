@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -25214,15 +25213,6 @@ cp-board .rotate {
   transform: rotate(-90deg);
 }
 
-cp-board .cards-holder {
-  width: 800px;
-  height: 600px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  z-index: 10000;
-}
-
 cp-board .room-holder {
   width: 800px !important;
   height: 600px !important;
@@ -25231,97 +25221,13 @@ cp-board .room-holder {
   left: 0px;
 }
 
-cp-board .card {
-  position: absolute;
-  width: 60px;
-}
-
-cp-board .pos1 {
-  top: 250px;
-  left: 240px;
-}
-
-cp-board .pos2 {
-  top: 250px;
-  left: 305px;
-  animation: go-rotate 3s infinite alternate;
-  -webkit-animation: go-rotate 3s infinite alternate;
-}
-
-cp-board .pos3 {
-  top: 250px;
-  left: 370px;
-}
-
-cp-board .pos4 {
-  top: 250px;
-  left: 435px;
-  animation: go-alpha 3s infinite alternate;
-  -webkit-animation: go-alpha 3s infinite alternate;
-}
-
-cp-board .pos5 {
-  top: 250px;
-  left: 500px;
-  animation: go-left-right 3s infinite alternate;
-  -webkit-animation: go-left-right 3s infinite alternate;
-}
-
-@keyframes go-left-right {
-  from {
-    left: 0px;
-  }
-  to {
-    left: calc(100% - 50px);
-    /* до: left: 100%-50px */
-  }
-}
-
-@-webkit-keyframes go-left-right {
-  from {
-    left: 0px;
-  }
-  to {
-    left: calc(100% - 50px);
-  }
-}
-
-@keyframes go-alpha {
-  from {
-    opacity: 100;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes go-alpha {
-  from {
-    opacity: 100;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes go-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
-
-@-webkit-keyframes go-rotate {
-  from {
-    opacity: 100;
-  }
-  to {
-    opacity: 0;
-  }
+cp-board .dealer-holder {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
 }
 
 cp-bottom-menu .bottom-menu-container {
@@ -25342,6 +25248,188 @@ cp-bottom-menu .bottom-menu-holder {
 
 cp-bottom-menu .bottom-menu-holder button {
   color: #FFFFFF;
+}
+
+cp-card {
+  /*
+        .card {
+        position: absolute;
+        width: 60px;
+    }
+
+    .pos1 {
+        top: 250px;
+        left: 240px;
+    }
+    .pos2 {
+        top: 250px;
+        left: 305px;
+    }
+    .pos3 {
+        top: 250px;
+        left: 370px;
+    }
+    .pos4 {
+        top: 250px;
+        left: 435px;
+
+        animation: go-alpha 3s infinite alternate;
+        -webkit-animation: go-alpha 3s infinite alternate;
+    }
+    .pos5 {
+        top: 250px;
+        left: 500px;
+
+        animation: go-left-right 3s infinite alternate;
+        -webkit-animation: go-left-right 3s infinite alternate;
+    }
+
+    @keyframes go-left-right {
+        from {
+            left: 0px;    
+        }
+        to {
+            left: calc(100% - 50px);
+        }
+    }
+    @-webkit-keyframes go-left-right {
+        from {
+            left: 0px;  
+        }
+        to {
+            left: calc(100% - 50px);
+        }
+    }
+
+    @keyframes go-alpha {
+        from {
+            opacity: 100;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    @-webkit-keyframes go-alpha {
+        from {
+            opacity: 100;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes go-rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(180deg);
+        }
+    }
+    @-webkit-keyframes go-rotate {
+        from {
+            opacity: 100;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    */
+}
+
+cp-card .card {
+  position: absolute;
+  width: 30px;
+  -webkit-transition-property: top left transform width height;
+  transition-property: top left transform width height;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+cp-card .pos0 {
+  top: 90px;
+  left: 380px;
+  width: 30px;
+}
+
+cp-card .pos21 {
+  top: 355px;
+  left: 610px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+cp-card .pos22 {
+  top: 360px;
+  left: 630px;
+}
+
+cp-card .pos41 {
+  top: 470px;
+  left: 310px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+cp-card .pos41open {
+  top: 430px;
+  left: 390px;
+  width: 60px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+cp-card .pos42 {
+  top: 475px;
+  left: 330px;
+}
+
+cp-card .pos42open {
+  top: 430px;
+  left: 340px;
+  width: 60px;
+}
+
+cp-card .pos81 {
+  top: 90px;
+  left: 140px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+cp-card .pos82 {
+  top: 95px;
+  left: 160px;
+}
+
+cp-card .board1 {
+  top: 250px;
+  left: 240px;
+  width: 60px;
+}
+
+cp-card .board2 {
+  top: 250px;
+  left: 305px;
+  width: 60px;
+}
+
+cp-card .board3 {
+  top: 250px;
+  left: 370px;
+  width: 60px;
+}
+
+cp-card .board4 {
+  top: 250px;
+  left: 435px;
+  width: 60px;
+}
+
+cp-card .board5 {
+  top: 250px;
+  left: 500px;
+  width: 60px;
 }
 
 cp-player .player-container {
@@ -25373,7 +25461,7 @@ cp-player .label {
   font-size: 120%;
 }
 
-cp-player .circle-anim {
+cp-player .circle-anim-container {
   position: relative;
   top: -99px;
   left: -5px;
@@ -25381,25 +25469,36 @@ cp-player .circle-anim {
   height: 0px;
 }
 
-cp-player circle {
+cp-player .circle-anim-container circle {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
   fill: none;
-  stroke: #FFFFFF;
+  stroke: white;
   stroke-width: 5;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 1000;
-  -webkit-animation: rotate 30s linear infinite;
-  animation: rotate 30s linear infinite;
+  stroke-dasharray: 295;
+  stroke-dashoffset: 295;
+}
+
+cp-player .circle-anim-start circle {
+  -webkit-animation: rotate 10s linear;
+  animation: rotate 10s linear;
 }
 
 @-webkit-keyframes rotate {
+  from {
+    stroke-dashoffset: 590;
+  }
   to {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 295;
   }
 }
 
 @keyframes rotate {
+  from {
+    stroke-dashoffset: 590;
+  }
   to {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 295;
   }
 }
 
