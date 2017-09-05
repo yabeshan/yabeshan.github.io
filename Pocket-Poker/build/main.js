@@ -625,6 +625,15 @@ var CpBoard = (function () {
                 model: new __WEBPACK_IMPORTED_MODULE_2__models__["d" /* RequestModel */]("player", true, { player: 8, action: 'anim' })
             }, {
                 duration: 1000,
+                model: new __WEBPACK_IMPORTED_MODULE_2__models__["d" /* RequestModel */]("card", true, { card: 11, action: 'http://yabeshan.github.io/Pocket-Poker/assets/cards/QH.svg' })
+            }, {
+                duration: 3000,
+                model: new __WEBPACK_IMPORTED_MODULE_2__models__["d" /* RequestModel */]("card", true, { card: 11, action: 'posMaxi' })
+            }, {
+                duration: 1000,
+                model: new __WEBPACK_IMPORTED_MODULE_2__models__["d" /* RequestModel */]("card", true, { card: 11, action: 'board5' })
+            }, {
+                duration: 1000,
                 model: new __WEBPACK_IMPORTED_MODULE_2__models__["d" /* RequestModel */]("card", true, { card: 0, action: 'http://yabeshan.github.io/Pocket-Poker/assets/cards/Red_Back.svg' })
             }, {
                 duration: 2000,

@@ -25352,6 +25352,14 @@ cp-card .pos0 {
   width: 30px;
 }
 
+cp-card .posMaxi {
+  width: 30000px;
+  top: -150px;
+  left: -150px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
 cp-card .pos21 {
   top: 355px;
   left: 610px;
