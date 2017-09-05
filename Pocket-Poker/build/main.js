@@ -533,30 +533,6 @@ var CpBoard = (function () {
         this.zoomX = 1;
         this.zoomY = 1;
         this.animStackIndex = -1;
-        /*
-        animStack: object[] = [{
-            duration: 1000,
-            model: new RequestModel("card",true,{card:1,action:'pos41'})
-        },{
-            duration: 1000,
-            model: new RequestModel("card",true,{card:2,action:'pos42'})
-        },{
-            duration: 1000,
-            model: new RequestModel("card",true,{card:2,action:'pos41open'})
-        },{
-            duration: 1000,
-            model: new RequestModel("card",true,{card:1,action:'pos42open'})
-        },{
-            duration: 500,
-            model: new RequestModel("card",true,{card:2,action:'http://yabeshan.github.io/Pocket-Poker/assets/cards/3H.svg'})
-        },{
-            duration: 3000,
-            model: new RequestModel("card",true,{card:1,action:'http://yabeshan.github.io/Pocket-Poker/assets/cards/4H.svg'})
-        },{
-            duration: 1000,
-            model: new RequestModel("card",true,{card:0,action:'http://yabeshan.github.io/Pocket-Poker/assets/cards/Red_Back.svg'})
-        }];
-        */
         this.animStack = [{
                 duration: 1000,
                 model: new __WEBPACK_IMPORTED_MODULE_2__models__["d" /* RequestModel */]("card", true, { card: 1, action: 'pos21' })
@@ -789,7 +765,7 @@ var CpDealer = (function () {
 }());
 CpDealer = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'cp-dealer',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-dealer\cp-dealer.html"*/'<div>\n\n\n\n    <cp-card [cardAction]="card1"></cp-card>\n\n    <cp-card [cardAction]="card2"></cp-card>\n\n    <cp-card [cardAction]="card3"></cp-card>\n\n    <cp-card [cardAction]="card4"></cp-card>\n\n    <cp-card [cardAction]="card5"></cp-card>\n\n    <cp-card [cardAction]="card6"></cp-card>\n\n    <cp-card [cardAction]="card7"></cp-card>\n\n    <cp-card [cardAction]="card8"></cp-card>\n\n    <cp-card [cardAction]="card9"></cp-card>\n\n    <cp-card [cardAction]="card10"></cp-card>\n\n    <cp-card [cardAction]="card11"></cp-card>\n\n    <cp-card [cardAction]="card12"></cp-card>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-dealer\cp-dealer.html"*/
+        selector: 'cp-dealer',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-dealer\cp-dealer.html"*/'<div>\n\n\n\n    <cp-card [cardAction]="card1"></cp-card>\n\n    <cp-card [cardAction]="card2"></cp-card>\n\n    <cp-card [cardAction]="card3"></cp-card>\n\n    <cp-card [cardAction]="card4"></cp-card>\n\n    <cp-card [cardAction]="card5"></cp-card>\n\n    <cp-card [cardAction]="card6"></cp-card>\n\n    <cp-card [cardAction]="card7"></cp-card>\n\n    <cp-card [cardAction]="card8"></cp-card>\n\n    <cp-card [cardAction]="card9"></cp-card>\n\n    <cp-card [cardAction]="card10"></cp-card>\n\n    <cp-card [cardAction]="card12"></cp-card>\n\n    <cp-card [cardAction]="card11"></cp-card>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-dealer\cp-dealer.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], CpDealer);
@@ -1031,7 +1007,7 @@ __decorate([
 ], CpPlayer.prototype, "playerAction", void 0);
 CpPlayer = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'cp-player',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/'<div class="{{styles}}"\n\n    *ngIf="visible" \n\n    [style.top.px]="top" \n\n    [style.left.px]="left">\n\n\n\n    <div class="avatar">\n\n        <img src="{{image}}" style="width:90px">\n\n    </div>\n\n\n\n    <div class="{{animStyles}}">\n\n        <svg height="100" width="100">\n\n            <circle cx="-50" cy="50" r="47" />\n\n        </svg>\n\n    </div>\n\n\n\n    <div class="label">\n\n        {{name}}<br>{{balance}}\n\n    </div>\n\n	\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/
+        selector: 'cp-player',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/'<div class="{{styles}}"\n\n    *ngIf="visible" \n\n    [style.top.px]="top" \n\n    [style.left.px]="left">\n\n\n\n    <div class="avatar">\n\n        <img src="{{image}}" style="width:90px">\n\n    </div>\n\n\n\n    <div class="{{animStyles}}">\n\n        <svg height="100" width="100">\n\n            <circle cx="-50" cy="50" r="47" />\n\n        </svg>\n\n    </div>\n\n\n\n    <div class="label">\n\n        {{name}}<br>{{balance}}\n\n    </div>\n\n    \n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], CpPlayer);
