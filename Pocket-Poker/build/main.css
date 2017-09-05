@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -25219,6 +25220,7 @@ cp-board .cards-holder {
   position: relative;
   top: 0px;
   left: 0px;
+  z-index: 10000;
 }
 
 cp-board .room-holder {
@@ -25227,6 +25229,99 @@ cp-board .room-holder {
   position: relative;
   top: -600px;
   left: 0px;
+}
+
+cp-board .card {
+  position: absolute;
+  width: 60px;
+}
+
+cp-board .pos1 {
+  top: 250px;
+  left: 240px;
+}
+
+cp-board .pos2 {
+  top: 250px;
+  left: 305px;
+  animation: go-rotate 3s infinite alternate;
+  -webkit-animation: go-rotate 3s infinite alternate;
+}
+
+cp-board .pos3 {
+  top: 250px;
+  left: 370px;
+}
+
+cp-board .pos4 {
+  top: 250px;
+  left: 435px;
+  animation: go-alpha 3s infinite alternate;
+  -webkit-animation: go-alpha 3s infinite alternate;
+}
+
+cp-board .pos5 {
+  top: 250px;
+  left: 500px;
+  animation: go-left-right 3s infinite alternate;
+  -webkit-animation: go-left-right 3s infinite alternate;
+}
+
+@keyframes go-left-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: calc(100% - 50px);
+    /* до: left: 100%-50px */
+  }
+}
+
+@-webkit-keyframes go-left-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: calc(100% - 50px);
+  }
+}
+
+@keyframes go-alpha {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes go-alpha {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes go-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes go-rotate {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 cp-bottom-menu .bottom-menu-container {
@@ -25270,12 +25365,42 @@ cp-player .avatar {
 
 cp-player .label {
   position: relative;
-  top: -10px;
+  top: -5px;
   left: -15px;
   color: #FFFFFF;
   text-align: center;
   text-shadow: 2px 2px 2px black;
   font-size: 120%;
+}
+
+cp-player .circle-anim {
+  position: relative;
+  top: -99px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+}
+
+cp-player circle {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 5;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 1000;
+  -webkit-animation: rotate 30s linear infinite;
+  animation: rotate 30s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rotate {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 page-home .game-container {

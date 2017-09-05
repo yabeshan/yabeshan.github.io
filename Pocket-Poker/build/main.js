@@ -565,29 +565,18 @@ var CpBoard = (function () {
         __WEBPACK_IMPORTED_MODULE_2__providers__["c" /* ResizeProvider */].rotationAction.next(this.rotatePlayer);
         this.zoom = (this.zoomX < this.zoomY) ? this.zoomX : this.zoomY;
         var dist = (h - 600 * this.zoom) * 0.5 / this.zoom;
-        if (dist > 100) {
+        if (dist >= 100) {
             this.top = dist;
         }
         else {
             this.left = (w - 800 * this.zoom) * 0.5 / this.zoom;
         }
-        /*
-        let dist: number = (w - 800 * this.zoom);
-        if (dist > 20) {
-            this.left = dist * 0.5 / this.zoom;
-        } else {
-            this.top = (h - 600 * this.zoom) * 0.5 / this.zoom;
-            if (this.top == 100) {
-                this.left = dist * 0.5 / this.zoom;
-            }
-        }
-        */
     };
     return CpBoard;
 }());
 CpBoard = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'cp-board',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/'<div class="{{styles}}" \n\n    [style.zoom]="zoom" \n\n    [style.top.px]="top"\n\n    [style.left.px]="left">\n\n\n\n    <div class="cards-holder">\n\n            <!-- cards-holder -->\n\n    </div>\n\n    <div class="room-holder">\n\n        <cp-room></cp-room>\n\n    </div>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/
+        selector: 'cp-board',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/'<div class="{{styles}}" \n\n    [style.zoom]="zoom" \n\n    [style.-moz-transform]="\'scale(\'+zoom+\')\'"\n\n    [style.top.px]="top"\n\n    [style.left.px]="left">\n\n\n\n    <div class="cards-holder">\n\n        <img class=\'card pos1\' src=\'http://yabeshan.github.io/Pocket-Poker/assets/cards/QH.svg\'>\n\n        <img class=\'card pos2\' src=\'http://yabeshan.github.io/Pocket-Poker/assets/cards/KC.svg\'>\n\n        <img class=\'card pos3\' src=\'http://yabeshan.github.io/Pocket-Poker/assets/cards/4D.svg\'>\n\n        <img class=\'card pos4\' src=\'http://yabeshan.github.io/Pocket-Poker/assets/cards/10C.svg\'>\n\n        <img class=\'card pos5\' src=\'http://yabeshan.github.io/Pocket-Poker/assets/cards/Red_Back.svg\'>\n\n    </div>\n\n    \n\n    <div class="room-holder">\n\n        <cp-room></cp-room>\n\n    </div>\n\n\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-board\cp-board.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
 ], CpBoard);
@@ -753,7 +742,7 @@ __decorate([
 ], CpPlayer.prototype, "playerAction", void 0);
 CpPlayer = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'cp-player',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/'<div class="{{styles}}"\n\n    *ngIf="visible" \n\n    [style.top.px]="top" \n\n    [style.left.px]="left">\n\n\n\n    <div class="avatar">\n\n        <img src="{{image}}" style="width:90px">\n\n    </div>\n\n    <div class="label">\n\n        {{name}}<br>{{balance}}\n\n    </div>\n\n    \n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/
+        selector: 'cp-player',template:/*ion-inline-start:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/'<div class="{{styles}}"\n\n    *ngIf="visible" \n\n    [style.top.px]="top" \n\n    [style.left.px]="left">\n\n\n\n    <div class="avatar">\n\n        <img src="{{image}}" style="width:90px">\n\n    </div>\n\n\n\n    <div class="circle-anim">\n\n        <svg height="100" width="100">\n\n            <circle cx="50" cy="50" r="47" />\n\n        </svg>\n\n    </div>\n\n\n\n    <div class="label">\n\n        {{name}}<br>{{balance}}\n\n    </div>\n\n	\n\n</div>'/*ion-inline-end:"D:\Nick_work\poker\Pocket-Poker\src\components\cp-player\cp-player.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], CpPlayer);
