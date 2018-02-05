@@ -60,12 +60,12 @@ function editItemDisabled() {
 function changeEditInput() {
     var inp = document.getElementById("edit-item-input");
     inp.addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
+        if (event.which === 13 ) {//"Enter"
             saveEditInput();
             event.preventDefault();
         }
 
-        if (event.key === "Escape") {
+        if (event.which === 27 ) {//"Escape"
             editItemDisabled();
             event.preventDefault();
         }
