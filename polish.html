@@ -1,11 +1,14 @@
 <html>
     <head>
         <script>
-            let go = (url) => {
+            let go = (url, flag) => {
                 // console.log("click go", id);
-                //document.getElementById('calendar').src = url;
-                var win = window.open(url, '_blank');
-                win.focus();
+                if (flag) {
+                    document.getElementById('calendar').src = url;
+                } else {
+                    var win = window.open(url, '_blank');
+                    win.focus();    
+                }
             }
         </script>
         <style>
@@ -20,10 +23,10 @@
     <body>
 
         <img class="img-btn"
-            onClick='go("")' />
+            onClick='go("", true)' />
         <img class="img-btn" 
             src="https://s-tm.ppstatic.pl/g/logo.svg"
-            onClick='go("https://www.telemagazyn.pl/")' />
+            onClick='go("https://www.telemagazyn.pl/", true)' />
         <img class="img-btn" 
             src="https://n-3-17.dcs.redcdn.pl/file/o2/redefine/redb/1o/1ocvp6ohm56f2v8xap7f28u9f7wimqfs.jpg"
             onClick='go("https://www.ipla.tv/kanaly-tv/NICKELODEON-POLSKA/10249")' />
