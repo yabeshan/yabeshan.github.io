@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            let go = (url) => {
+                // console.log("click go", id);
+                document.getElementById('calendar').src = url;
+            }
+        </script>
+        <style>
+            .img-btn {
+                width:100px;
+                height:50px;
+                background:red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <img class="img-btn"
+            onClick='go("")' />
+        <img class="img-btn" 
+            src="https://s-tm.ppstatic.pl/g/logo.svg"
+            onClick='go("https://www.telemagazyn.pl/")' />
+        <img class="img-btn" 
+            src="https://n-3-17.dcs.redcdn.pl/file/o2/redefine/redb/1o/1ocvp6ohm56f2v8xap7f28u9f7wimqfs.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/NICKELODEON-POLSKA/10249")' />
+        <img class="img-btn" 
+            src="https://n-3-18.dcs.redcdn.pl/file/o2/redefine/redb/uv/uvwxn3s74hirc8tnfe7mu796vewmppw1.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/NICK-JR/10250")' />
+        <img class="img-btn" 
+            src="https://n-3-3.dcs.redcdn.pl/file/o2/redefine/redb/6h/6h4ywtct93ak1uh2wvukj87fghdr3b41.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/NickToons/10251")' />
+        <img class="img-btn" 
+            src="https://n-3-9.dcs.redcdn.pl/file/o2/redefine/redb/ef/efd92dmp8m43hd28g66m7bh8xq447q1c.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Disney-Channel/10903")' />
+        <img class="img-btn" 
+            src="https://n-3-9.dcs.redcdn.pl/file/o2/redefine/redb/c1/c1mr684ejjpbbkbj19682pwzrrkqd79i.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Disney-Junior/10905")' />
+        <img class="img-btn" 
+            src="https://n-3-20.dcs.redcdn.pl/file/o2/redefine/redb/qu/qui6w5s6o9bd1h8ohf4rxm8akba2kgag.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Disney-XD/11384")' />
+        <img class="img-btn" 
+            src="https://n-3-17.dcs.redcdn.pl/file/o2/redefine/redb/5r/5rjbzs1icmocc3vg4wusgdck343cqt4m.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Cartoon-Network-HD/11395")' />
+        <img class="img-btn" 
+            src="https://n-3-18.dcs.redcdn.pl/file/o2/redefine/redb/tb/tbbndy4daurtyq45pjdoag3zr69wn31e.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Boomerang-HD/11322")' />
+        <img class="img-btn" 
+            src="https://n-3-9.dcs.redcdn.pl/file/o2/redefine/redb/ro/rokgsmqnox2aio8smfbtyazrs73euimk.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/BBC-CBEEBIES/13334")' />
+        <img class="img-btn" 
+            src="https://n-3-10.dcs.redcdn.pl/file/o2/redefine/redb/36/36q4kro3q2pywxy7nnp588jkmi6r57hx.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Da-Vinci/6017")' />
+        <img class="img-btn" 
+            src="https://n-3-19.dcs.redcdn.pl/file/o2/redefine/redb/3h/3h8z363x4i312smwrta5arns3zni6pcs.jpg"
+            onClick='go("https://www.ipla.tv/kanaly-tv/Duck-TV/6144")' />
+        <br>
+        <iframe id="calendar" src="about:blank" width="100%" height="80%" frameborder="2"></iframe>
+
+    </body>
+</html>
