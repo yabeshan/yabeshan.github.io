@@ -3,7 +3,9 @@
         <script>
             let go = (url) => {
                 // console.log("click go", id);
-                document.getElementById('calendar').src = url;
+                //document.getElementById('calendar').src = url;
+                var win = window.open(url, '_blank');
+                win.focus();
             }
         </script>
         <style>
